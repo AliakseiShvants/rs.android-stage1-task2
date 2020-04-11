@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter
 import kotlin.reflect.KClass
 
 private const val EMPTY = ""
-private const val PATTERN2 = "dd.mm.yyyy"
+private const val PATTERN = "dd.MM.yyyy"
 
 class Blocks {
 
@@ -26,7 +26,7 @@ class Blocks {
 
             diffList.forEachIndexed { index, value ->
                 if (value == minDiff) {
-                    return dateList[index].format(DateTimeFormatter.ofPattern(PATTERN2))
+                    return dateList[index].format(DateTimeFormatter.ofPattern(PATTERN))
                 }
             }
         }
