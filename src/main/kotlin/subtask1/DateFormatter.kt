@@ -5,7 +5,7 @@ import java.time.format.TextStyle
 import java.util.*
 
 private const val ERROR_DAY = "Такого дня не существует"
-private const val RU = "ru"
+private const val RU = "RU"
 
 class DateFormatter {
 
